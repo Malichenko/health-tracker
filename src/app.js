@@ -16,7 +16,7 @@ import "./theme/index.scss";
 export const App = () => {
   return (
     <Provider store={store}>
-      <Router history={history}>
+      <Router history={history} basename="/health-tracker/" >
         <Routes />
       </Router>
     </Provider>
