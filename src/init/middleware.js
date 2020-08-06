@@ -19,7 +19,9 @@ export const logger = createLogger({
   },
 });
 
-const history = createBrowserHistory();
+const history = createBrowserHistory({
+  basename: "/health-tracker/",
+});
 
 const myRouterMiddleware = routerMiddleware(history);
 
